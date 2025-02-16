@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: block;
+    background-color:#FDFDFD;
+    min-height: 340px;
+    padding: 30px;
+}
+
+h1 {
+    font-family: "Rubik", serif;
+    color:#101111;
+    font-size: 36px;
+}
+
+.cards {
+    display: inline-flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.picture {
+  display: block;
+  flex-basis: 50%;
+  min-height: 300px;
+  overflow: hidden;
+
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+h2 {
+    color:#0B4183;
+    font-family: "Afacad", serif;
+    font-size: 24px;
+    padding-top: 20px;
+    margin: 0;
+}
+
+p {
+    font-family: "Afacad", serif;
+    color:#101111;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.price {
+    font-family: "Federo", serif;
+    color:#101111;
+    font-size: 32px;
+    padding: 8px 0 0 0px;
+    margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+  
+  h2 {
+    padding-top: 10px;
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .price {
+    font-size: 24px;
+    padding: 4px 0 0 0px;
+  }
+
+  .picture {
+    flex-basis: 300px;
+    min-height: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 32px;
+    }
+  .cards {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  h2 {
+    padding-top: 10px;
+  }
+
+  .price {
+    font-size: 20px;
+    padding: 4px 0 0 0px;
+  }
+
+  .picture {
+    flex-basis: 300px;
+    min-height: auto;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+    h1 {
+        font-size: 24px;
+    }
+  .cards {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  h2 {
+    padding-top: 10px;
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .price {
+    font-size: 18px;
+    padding: 4px 0 0 0px;
+  }
+
+  .picture {
+    flex-basis: 300px;
+    min-height: auto;
+  }
+}
